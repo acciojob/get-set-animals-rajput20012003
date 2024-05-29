@@ -1,27 +1,32 @@
+// Define the Animal class
 class Animal {
-  constructor(species) {
-    this._species = species;
-  }
+    constructor(species) {
+        this._species = species;
+    }
 
-  get species() {
-    return this._species;
-  }
+    // Getter for species
+    get species() {
+        return this._species;
+    }
 
-  makeSound() {
-    console.log(`The ${this.species} makes a sound`);
-  }
+    // Method to make a sound
+    makeSound() {
+        console.log(`The ${this.species} makes a sound`);
+    }
 }
 
-class Dog extends Animal {
-  bark() {
-    console.log("woof");
-  }
-}
-
+// Define the Cat class, extending Animal
 class Cat extends Animal {
-  purr() {
-    console.log("purr");
-  }
+    purr() {
+        console.log("purr");
+    }
+}
+
+// Define the Dog class, extending Animal
+class Dog extends Animal {
+    bark() {
+        console.log("woof");
+    }
 }
 
 // Example usage
